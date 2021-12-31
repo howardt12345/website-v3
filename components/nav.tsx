@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import { throttle } from "@utils";
+import { throttle } from "throttle-typescript";
 import config from "@lib/config";
 import { Menu, ToggleButton } from "@components";
 import { IconLogo } from "@components/icons";
@@ -58,7 +58,7 @@ const StyledTitle = styled.h2`
   ${media.tablet`display: none;`};
 `;
 const StyledLogo = styled.div`
-  colo: r${({ theme }) => theme.colors.accent};
+  colo: r ${({ theme }) => theme.colors.accent};
   fill: ${({ theme }) => theme.colors.accent};
   ${mixins.flexCenter};
   a {
@@ -102,7 +102,7 @@ const StyledHamburgerBox = styled.div`
   width: ${theme.hamburgerWidth}px;
   height: 24px;
 `;
-const StyledHamburgerInner = styled.div<{ menuOpen: boolean; }>`
+const StyledHamburgerInner = styled.div<{ menuOpen: boolean }>`
   background-color: ${({ theme }) => theme.colors.accent};
   position: absolute;
   width: ${theme.hamburgerWidth}px;
@@ -171,7 +171,7 @@ const StyledListLink = styled(Link)`
 
 const DELTA = 5;
 
-class Nav extends Component<{animate: boolean;}> {
+class Nav extends Component<{ animate: boolean }> {
   state = {
     isMounted: !this.props.animate,
     menuOpen: false,
@@ -184,10 +184,10 @@ class Nav extends Component<{animate: boolean;}> {
       () =>
         this.setState({ isMounted: true }, () => {
           window.addEventListener("scroll", () =>
-            throttle(this.handleScroll())
+            throttle(this.handleScroll, 100)
           );
           window.addEventListener("resize", () =>
-            throttle(this.handleResize())
+            throttle(this.handleResize, 100)
           );
           window.addEventListener("keydown", (e) => this.handleKeydown(e));
         }),
