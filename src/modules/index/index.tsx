@@ -13,6 +13,13 @@ import {
   StyledTitle,
   StyledTitleBox,
 } from "./index.styles";
+import {
+  titleVariants,
+  subtitleVariants,
+  lineVariants,
+  navVariants,
+  toggleVariants,
+} from "./index.animations";
 import IconButton from "@components/iconbutton";
 import ToggleButton from "@components/toggle_button";
 import { motion } from "framer-motion";
@@ -43,96 +50,19 @@ const HomePage = () => {
     };
   }, [width, isBrowser, isMounted]);
 
-  const titleVariants = {
-    hidden: {
-      opacity: 0,
-      y: 50,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        ease: "easeOut",
-        duration: 0.5,
-        delay: 0.5,
-      },
-    },
-  };
-  const subtitleVariants = {
-    hidden: {
-      opacity: 0,
-      y: -30,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        ease: "easeOut",
-        duration: 0.5,
-        delay: 0.75,
-      },
-    },
-  };
-  const lineVariants = {
-    hidden: {
-      opacity: 0,
-      scale: 0,
-    },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        ease: "easeOut",
-        duration: 0.5,
-      },
-    },
-  };
-  const navVariants = {
-    hidden: {
-      opacity: 0,
-      y: -20,
-    },
-    visible: (i: any) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        ease: "easeOut",
-        duration: 0.5,
-        delay: i * 0.1 + 1,
-      },
-    }),
-  };
-  const toggleVariants = {
-    hidden: {
-      opacity: 0,
-      y: -10,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        ease: "easeOut",
-        duration: 0.5,
-        delay: 2.5,
-      },
-    },
-  };
-
   return (
     <Layout isHome={true} animateNav={false} footer={true}>
       <StyledContainer className="fillHeight">
         {isMounted && (
-          <motion.div
+          <StyledTitleBox
             key="overline"
             initial="hidden"
             animate="visible"
             variants={titleVariants}
           >
-            <StyledTitleBox>
-              <StyledOverline>{lib.overline}</StyledOverline>
-              <StyledTitle>{lib.title}</StyledTitle>
-            </StyledTitleBox>
-          </motion.div>
+            <StyledOverline>{lib.overline}</StyledOverline>
+            <StyledTitle>{lib.title}</StyledTitle>
+          </StyledTitleBox>
         )}
         {isMounted && (
           <motion.div
@@ -152,11 +82,7 @@ const HomePage = () => {
             variants={subtitleVariants}
           >
             <StyledSubtitle>
-              {
-                <div
-                  dangerouslySetInnerHTML={{ __html: lib.subtitle }}
-                />
-              }
+              {<div dangerouslySetInnerHTML={{ __html: lib.subtitle }} />}
             </StyledSubtitle>
           </motion.div>
         )}

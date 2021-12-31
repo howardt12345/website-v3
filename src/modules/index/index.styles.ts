@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { theme, mixins, media, Main } from '@styles';
+import { motion } from "framer-motion";
 import Link from 'next/link'
 
 export const { fontSizes, fonts, navDelay } = theme;
@@ -8,7 +9,7 @@ export const StyledContainer = styled(Main)`
   ${mixins.flexCenter};
   flex-direction: column;
 `;
-export const StyledTitleBox = styled.div`
+export const StyledTitleBox = styled(motion.div)`
   flex-direction: column;
   width: 800px;
   ${media.bigDesktop`width: 800px;`};
@@ -16,7 +17,7 @@ export const StyledTitleBox = styled.div`
 `;
 export const StyledOverline = styled.h2`
   text-align: left;
-  font-size: 36px;
+  font-size: ${fontSizes.h3};
   font-weight: 400;
   font-family: ${fonts.Poppins};
   color: ${({ theme }) => theme.colors.textPrimary};
@@ -33,6 +34,7 @@ export const StyledTitle = styled.h1`
   font-size: 114px;
   line-height: 0.75;
   font-weight: 400;
+  margin-left: -6px;
   ${media.bigDesktop`font-size: 114px;`};
   ${media.bigDesktop`text-align: left;`}
   ${media.thone`text-align: center;`}
@@ -46,7 +48,7 @@ export const StyledSubtitle = styled.h2`
   ${media.bigDesktop`width: 800px;`};
   ${media.desktop`width: 80vw;`};
   text-align: right;
-  font-size: 36px;
+  font-size: ${fontSizes.h3};
   font-weight: 400;
   font-family: ${fonts.Poppins};
   color: ${({ theme }) => theme.colors.textPrimary};
@@ -58,7 +60,7 @@ export const StyledSubtitle = styled.h2`
 `;
 export const Line = styled.hr`
   width: 800px;
-  height: 6px;
+  height: 4px;
   ${media.bigDesktop`width: 800px;`};
   ${media.desktop`width: 80vw;`};
   background-color: ${({ theme }) => theme.colors.textPrimary};
