@@ -28,7 +28,7 @@ const StyledContainer = styled.div<Props>`
 const Sidebar = styled.aside`
   ${mixins.flexCenter};
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background_secondary};
   padding: 50px;
   width: 50vw;
   height: 100%;

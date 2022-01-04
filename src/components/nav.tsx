@@ -270,12 +270,12 @@ class Nav extends Component<{ animate: boolean }> {
                 <StyledLogo>
                   {animate ? (
                     <a href="/" aria-label="home">
-                      <IconLogo />
+                    <IconLogo />
                     </a>
                   ) : (
-                    <Link href="/" aria-label="home">
+                    <a href="/" aria-label="home">
                       <IconLogo />
-                    </Link>
+                    </a>
                   )}
                 </StyledLogo>
               </CSSTransition>
