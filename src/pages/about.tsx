@@ -7,8 +7,7 @@ import path from "path";
 const aboutDirectory = path.join(process.cwd(), "content/about");
 
 const About = (data: any) => {
-  console.log(data);
-  return <AboutPage data={data} />;
+  return <AboutPage {...data} />;
 };
 
 export const getStaticProps: GetStaticProps = async () => {

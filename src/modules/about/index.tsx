@@ -16,11 +16,12 @@ import { Layout } from "@components";
 
 const { instalink } = config;
 
-const AboutPage = ({ data }: { data: any }) => {
+const AboutPage = ({frontMatter, content} : {frontMatter: any, content: any}) => {
+  const { title, avatar, skills } = frontMatter;
   return (
     <Layout isHome={false} animateNav={false} footer={true}>
       <StyledContainer id="about">
-        <Heading>About</Heading>
+        <Heading>{title}</Heading>
         <FlexContainer>
           <StyledPic>
             <StyledAvatarLink
