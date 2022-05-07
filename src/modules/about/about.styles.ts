@@ -33,13 +33,18 @@ export const StyledPic = styled.div`
   }
 `;
 export const StyledAvatar = styled(Image)`
-  position: relative;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1);
-  border-radius: ${theme.borderRadius};
-  transition: ${theme.transition};
 `;
 export const StyledAvatarLink = styled.a`
+  span {
+    display: block !important;
+  }
+  img {
+    position: relative;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1);
+    border-radius: ${theme.borderRadius};
+    transition: ${theme.transition};
+  }
   ${mixins.boxShadow};
   width: 100%;
   position: relative;

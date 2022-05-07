@@ -13,6 +13,7 @@ import {
 } from './about.styles';
 import { FlexContainer, Heading } from '@styles';
 import { Layout } from '@components';
+import { aboutDirectory } from '@lib/about';
 
 const { instalink } = config;
 
@@ -23,7 +24,7 @@ const AboutPage = ({
   frontMatter: any;
   content: any;
 }) => {
-  const { title, avatar, skills } = frontMatter;
+  const { title, avatar } = frontMatter;
   return (
     <Layout isHome={false} animateNav={false} footer={true}>
       <StyledContainer id='about'>
@@ -34,7 +35,13 @@ const AboutPage = ({
               href={instalink}
               target='_blank'
               rel='nofollow noopener noreferrer'
-            ></StyledAvatarLink>
+            >
+              <StyledAvatar
+                src={aboutDirectory + avatar}
+                height='1000'
+                width='800'
+              ></StyledAvatar>
+            </StyledAvatarLink>
           </StyledPic>
         </FlexContainer>
         <StyledResumeContainer>
