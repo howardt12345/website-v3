@@ -1,6 +1,6 @@
 ---
 title: 'About'
-avatar: './me.jpg'
+avatar: '/me.jpg'
 mainSkills:
   - Java
   - Python
@@ -11,10 +11,16 @@ mainSkills:
   - Angular
 tools:
   - Git
-Languages:
+programmingLangs:
   - Java
-Hobbies:
-  - Gaming
+hobbies:
+  - Hobby 1
+  - Hobby 2
+  - Hobby 3
+languages: 
+  - English (fluent)
+  - Taiwanese Mandarin (elementary)
+  - Japanese (basic)
 ---
 
 Hello! I'm Howard, a front-end developer and freelance photographer based in Toronto, Ontario. I'm also currently a second-year Computer Science student at the University of Ottawa.
