@@ -32,8 +32,7 @@ export const StyledPic = styled.div`
     }
   }
 `;
-export const StyledAvatar = styled(Image)`
-`;
+export const StyledAvatar = styled(Image)``;
 export const StyledAvatarLink = styled.a`
   span {
     display: block !important;

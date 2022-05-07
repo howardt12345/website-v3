@@ -17,7 +17,7 @@ hobbies:
   - Hobby 1
   - Hobby 2
   - Hobby 3
-languages: 
+languages:
   - English (fluent)
   - Taiwanese Mandarin (elementary)
   - Japanese (basic)
