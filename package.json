@@ -6,7 +6,8 @@
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
     "lint": "eslint --ext .ts,.tsx .",
-    "lint:fix": "eslint --fix --ext .ts,.tsx .\""
+    "lint:fix": "eslint --fix --ext .ts,.tsx .\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "buffer": "^6.0.3",
@@ -39,6 +40,11 @@
     "eslint-config-react-app": "^7.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
     "typescript": "^4.6.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,mdx}": "npm run format"
   }
 }
