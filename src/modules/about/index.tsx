@@ -40,6 +40,7 @@ const AboutPage = ({
                 src={aboutDirectory + avatar}
                 height='1000'
                 width='800'
+                placeholder='blur'
               ></StyledAvatar>
             </StyledAvatarLink>
           </StyledPic>
