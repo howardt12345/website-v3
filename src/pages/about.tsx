@@ -1,3 +1,5 @@
+import React from 'react';
+
 import AboutPage from '@modules/about';
 import * as fs from 'fs';
 import matter from 'gray-matter';

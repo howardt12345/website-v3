@@ -21,37 +21,29 @@ export const capitalize = (str: string) =>
   str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 
 export const currentTime = () => {
-  let now = new Date();
+  const now = new Date();
   return `${now.getFullYear()}-${(now.getMonth() + 1).toLocaleString('en-US', {
     minimumIntegerDigits: 2,
     useGrouping: false,
-  })}-${now
-    .getDate()
-    .toLocaleString('en-US', {
-      minimumIntegerDigits: 2,
-      useGrouping: false,
-    })} ${now
-    .getHours()
-    .toLocaleString('en-US', {
-      minimumIntegerDigits: 2,
-      useGrouping: false,
-    })}:${now
-    .getMinutes()
-    .toLocaleString('en-US', {
-      minimumIntegerDigits: 2,
-      useGrouping: false,
-    })}:${now
-    .getSeconds()
-    .toLocaleString('en-US', {
-      minimumIntegerDigits: 2,
-      useGrouping: false,
-    })}.${now
+  })}-${now.getDate().toLocaleString('en-US', {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  })} ${now.getHours().toLocaleString('en-US', {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  })}:${now.getMinutes().toLocaleString('en-US', {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  })}:${now.getSeconds().toLocaleString('en-US', {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  })}.${now
     .getMilliseconds()
     .toLocaleString('en-US', { minimumIntegerDigits: 3, useGrouping: false })}`;
 };
 
 export const isEmpty = (obj: { hasOwnProperty: (arg0: string) => any }) => {
-  for (let key in obj) {
+  for (const key in obj) {
     if (obj.hasOwnProperty(key)) return false;
   }
   return true;
