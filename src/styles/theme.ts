@@ -16,7 +16,7 @@ export const theme_light = {
     textBody: '#0C0C0C',
     translucent_accent: 'rgba(33, 150, 243, 0.07)',
     shadow_bg: 'rgba(234, 234, 234, 0.07)',
-  }
+  },
 };
 
 export const theme_dark = {
@@ -30,13 +30,13 @@ export const theme_dark = {
     textBody: '#F3F3F3',
     translucent_accent: 'rgba(100, 255, 218, 0.07)',
     shadow_bg: 'rgba(21, 21, 21, 0.07)',
-  }
-}
+  },
+};
 
 export const theme = {
   fonts: {
-    Poppins: "Poppins",
-    Raleway: "raleway, sans-serif",
+    Poppins: 'Poppins',
+    Raleway: 'raleway, sans-serif',
   },
 
   fontSizes: {

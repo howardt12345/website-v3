@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx}\""
   },
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -12,6 +13,7 @@
     "next": "^12.1.5",
     "next-fonts": "^1.5.1",
     "next-themes": "^0.0.15",
+    "prettier": "^2.6.2",
     "process": "^0.11.10",
     "react": "17.0.2",
     "react-dom": "17.0.2",

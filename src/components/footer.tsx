@@ -1,5 +1,5 @@
 import React from 'react';
-import { Social } from '@components'; 
+import { Social } from '@components';
 import styled from 'styled-components';
 import { theme, mixins } from '@styles';
 const { fontSizes, fonts } = theme;
@@ -28,9 +28,10 @@ const Footer = () => {
       <Social />
       <StyledMetadata>
         <StyledGitHubLink
-          href="https://github.com/howardt12345/website-v3"
-          target="_blank"
-          rel="nofollow noopener noreferrer">
+          href='https://github.com/howardt12345/website-v3'
+          target='_blank'
+          rel='nofollow noopener noreferrer'
+        >
           <div>{`© ${new Date().getFullYear()} Howard Tseng`}</div>
         </StyledGitHubLink>
       </StyledMetadata>

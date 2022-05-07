@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { theme, mixins, media, Main } from '@styles';
-import { motion } from "framer-motion";
-import Link from 'next/link'
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export const { fontSizes, fonts, navDelay } = theme;
 

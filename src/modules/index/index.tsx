@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 import {
   Line,
@@ -12,52 +12,52 @@ import {
   StyledSubtitle,
   StyledTitle,
   StyledTitleBox,
-} from "./index.styles";
+} from './index.styles';
 import {
   titleVariants,
   subtitleVariants,
   lineVariants,
   navVariants,
   toggleVariants,
-} from "./index.animations";
-import IconButton from "@components/iconbutton";
-import ToggleButton from "@components/toggle_button";
-import { motion } from "framer-motion";
-import { Layout } from "@components";
-import config from "@lib/config";
-import * as lib from "@lib/home";
+} from './index.animations';
+import IconButton from '@components/iconbutton';
+import ToggleButton from '@components/toggle_button';
+import { motion } from 'framer-motion';
+import { Layout } from '@components';
+import config from '@lib/config';
+import * as lib from '@lib/home';
 
 const { navLinks } = config;
 
 const HomePage = () => {
-  const isBrowser = typeof window !== "undefined";
+  const isBrowser = typeof window !== 'undefined';
   const [width, setWidth] = useState(isBrowser ? window.innerWidth : 0);
 
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      if (typeof window !== "undefined") {
+      if (typeof window !== 'undefined') {
         setWidth(window.innerWidth);
       }
     };
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
       clearTimeout(timeout);
     };
   }, [width, isBrowser, isMounted]);
 
   return (
     <Layout isHome={true} animateNav={false} footer={true}>
-      <StyledContainer className="fillHeight">
+      <StyledContainer className='fillHeight'>
         {isMounted && (
           <StyledTitleBox
-            key="overline"
-            initial="hidden"
-            animate="visible"
+            key='overline'
+            initial='hidden'
+            animate='visible'
             variants={titleVariants}
           >
             <StyledOverline>{lib.overline}</StyledOverline>
@@ -66,9 +66,9 @@ const HomePage = () => {
         )}
         {isMounted && (
           <motion.div
-            key="title"
-            initial="hidden"
-            animate="visible"
+            key='title'
+            initial='hidden'
+            animate='visible'
             variants={lineVariants}
           >
             <Line />
@@ -76,9 +76,9 @@ const HomePage = () => {
         )}
         {isMounted && (
           <motion.div
-            key="subtitle"
-            initial="hidden"
-            animate="visible"
+            key='subtitle'
+            initial='hidden'
+            animate='visible'
             variants={subtitleVariants}
           >
             <StyledSubtitle>
@@ -92,10 +92,10 @@ const HomePage = () => {
               navLinks &&
               navLinks.map(({ url, name }: { url: any; name: any }, i: any) => (
                 <motion.div
-                  key={"nav" + i}
+                  key={'nav' + i}
                   custom={i}
-                  initial="hidden"
-                  animate="visible"
+                  initial='hidden'
+                  animate='visible'
                   variants={navVariants}
                 >
                   {width >= 600 && (
@@ -112,9 +112,9 @@ const HomePage = () => {
         </StyledNavLinks>
 
         <motion.div
-          key="toggle_button"
-          initial="hidden"
-          animate="visible"
+          key='toggle_button'
+          initial='hidden'
+          animate='visible'
           variants={toggleVariants}
         >
           <ToggleButton />

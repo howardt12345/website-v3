@@ -2,9 +2,9 @@ import { css } from 'styled-components';
 
 type tsizes = {
   [key: string]: number;
-}
+};
 
-const sizes : tsizes = {
+const sizes: tsizes = {
   giant: 1440,
   bigDesktop: 1200,
   desktop: 1000,

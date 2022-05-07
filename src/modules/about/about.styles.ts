@@ -1,6 +1,5 @@
-
 import styled from 'styled-components';
-import Image from 'next/image'
+import Image from 'next/image';
 import { theme, mixins, media, Section } from '@styles';
 
 const { fontSizes, fonts } = theme;

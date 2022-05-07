@@ -3,7 +3,6 @@ import { theme } from './theme';
 import media from './media';
 const { fonts } = theme;
 
-
 const Heading = styled.h1`
   text-align: left;
   font-family: ${fonts.Poppins};

@@ -7,7 +7,7 @@ export const titleVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
       duration: 0.5,
       delay: 0.5,
     },
@@ -22,7 +22,7 @@ export const subtitleVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
       duration: 0.5,
       delay: 0.75,
     },
@@ -37,7 +37,7 @@ export const lineVariants = {
     opacity: 1,
     scale: 1,
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
       duration: 0.5,
     },
   },
@@ -51,7 +51,7 @@ export const navVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
       duration: 0.5,
       delay: i * 0.1 + 1,
     },
@@ -66,7 +66,7 @@ export const toggleVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
       duration: 0.5,
       delay: 2.5,
     },
