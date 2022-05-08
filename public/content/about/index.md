@@ -21,8 +21,8 @@ hobbies:
   - Video Games
 ---
 
-Hello! I'm Howard, a front-end developer and freelance photographer based in Toronto. I'm also currently a 3rd year Computer Science student at the University of Ottawa.
+Hello! I'm Howard, a front-end developer and freelance photographer in Toronto. I'm also currently a 3rd year Computer Science student at the University of Ottawa.
 </br>
-I've been programming since 2016, and am proficient languages such as Java, Python, and Javascript. I've been using Flutter since its beta in early 2018, and have been developing mobile applications primarily with Flutter. I'm also proficient in web development and UI, having worked with ReactJS and Angular for the past few years.
+I've been programming since 2016, and am proficient languages such as Java, Python, and Javascript. I've been using Flutter to develop mobile applications since its early beta in early 2018. I'm also proficient in web development and UI, having worked with ReactJS and Angular for the past few years.
 </br>
 I've also been doing photography since late 2012, and am currently a freelance photographer specializing in event and portrait photography.

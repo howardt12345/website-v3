@@ -98,7 +98,7 @@ export const StyledResumeButton = styled.a`
 `;
 export const AboutDescription = styled.div`
   font-family: ${fonts.Raleway};
-  font-size: ${fontSizes.sm};
+  font-size: ${fontSizes.md};
   br {
     display: block;
     margin: 0.5rem 0;

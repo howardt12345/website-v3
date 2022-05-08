@@ -1,10 +1,14 @@
 import styled from 'styled-components';
-import { theme } from '@styles';
+import { theme, media } from '@styles';
 
 const { fontSizes, fonts } = theme;
 export const SkillsContainer = styled.ul`
   display: grid;
-  grid-template-columns: repeat(3, minmax(140px, 200px));
+  grid-template-columns: repeat(3, minmax(140px, 33%));
+  ${media.bigDesktop`grid-template-columns: repeat(2, minmax(140px, 50%));`};
+  ${media.tablet`grid-template-columns: repeat(3, minmax(140px, 33%));`};
+  ${media.thone`grid-template-columns: repeat(2, minmax(140px, 50%));`};
+  ${media.phone`grid-template-columns: none;`};
   overflow: hidden;
   padding: 0;
   margin: 0.5rem 0;
