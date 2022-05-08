@@ -12,8 +12,7 @@ export const StyledContainer = styled(Section)`
 `;
 
 export const StyledContent = styled.div`
-  width: 55%;
-  max-width: 480px;
+  width: 65%;
   ${media.tablet`width: 100%;`};
   a {
     ${mixins.inlineLink};
@@ -21,11 +20,10 @@ export const StyledContent = styled.div`
 `;
 export const StyledPic = styled.div`
   position: relative;
-  width: 45%;
-  max-width: 400px;
+  width: 35%;
+  max-width: 300px;
   margin-left: 60px;
-  ${media.tablet`margin: 60px auto 0;`};
-  ${media.phablet`width: 70%;`};
+  ${media.tablet`margin: 60px auto 0; width: 70%;`};
   a {
     &:focus {
       outline: 0;
@@ -40,7 +38,7 @@ export const StyledAvatarLink = styled.a`
   img {
     position: relative;
     mix-blend-mode: multiply;
-    filter: grayscale(100%) contrast(1);
+    filter: grayscale(100%) contrast(1) !important;
     border-radius: ${theme.borderRadius};
     transition: ${theme.transition};
   }
@@ -58,7 +56,7 @@ export const StyledAvatarLink = styled.a`
       left: 15px;
     }
     ${StyledAvatar} {
-      filter: none;
+      filter: none !important;
       mix-blend-mode: normal;
     }
   }
@@ -87,30 +85,6 @@ export const StyledAvatarLink = styled.a`
     z-index: -1;
   }
 `;
-export const SkillsContainer = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(3, minmax(140px, 200px));
-  overflow: hidden;
-  padding: 0;
-  margin: 20px 0 0 0;
-  list-style: none;
-`;
-export const Skill = styled.li`
-  position: relative;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  font-family: ${fonts.Raleway};
-  font-size: ${fontSizes.sm};
-  color: ${({ theme }) => theme.colors.textPrimary};
-  &:before {
-    content: '▹';
-    position: absolute;
-    left: 0;
-    color: ${({ theme }) => theme.colors.accent};
-    font-size: ${fontSizes.md};
-    line-height: 12px;
-  }
-`;
 export const StyledResumeContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -119,6 +93,15 @@ export const StyledResumeContainer = styled.div`
   flex-direction: column;
 `;
 export const StyledResumeButton = styled.a`
-  ${mixins.bigButton};
-  margin-top: 40px;
+  ${mixins.smallButton};
+  margin: 1rem;
+`;
+export const AboutDescription = styled.div`
+  font-family: ${fonts.Raleway};
+  font-size: ${fontSizes.sm};
+  br {
+    display: block;
+    margin: 0.5rem 0;
+    content: '';
+  }
 `;

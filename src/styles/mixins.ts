@@ -73,7 +73,7 @@ const mixins = {
   smallButton: css`
     color: ${({ theme }) => theme.colors.accent};
     background-color: transparent;
-    border: 1px solid accent;
+    border: 1px solid ${({ theme }) => theme.colors.accent};
     border-radius: ${theme.borderRadius};
     padding: 0.75rem 1rem;
     font-size: ${fontSizes.smish};
@@ -95,7 +95,7 @@ const mixins = {
   bigButton: css`
     color: ${({ theme }) => theme.colors.accent};
     background-color: transparent;
-    border: 1px solid accent;
+    border: 1px solid ${({ theme }) => theme.colors.accent};
     border-radius: ${theme.borderRadius};
     padding: 1rem 1.75rem;
     font-size: ${fontSizes.sm};
