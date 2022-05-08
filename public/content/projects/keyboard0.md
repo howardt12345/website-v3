@@ -1,5 +1,5 @@
 ---
-date: '2021-11-05'
+date: '2022-01-30'
 title: 'keyboard0 by ht12345'
 github: 'https://github.com/howardt12345/keyboard0'
 external: 'https://kb.ht12345.xyz/0'

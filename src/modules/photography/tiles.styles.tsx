@@ -4,6 +4,9 @@ import Dialog from '@reach/dialog';
 import { media, mixins } from '@styles';
 import Image from 'next/image';
 
+const dialogFactor = 45;
+const maxDialogWidth = 80;
+
 interface DialogProps {
   width: number;
   height: number;
@@ -26,12 +29,13 @@ export const StyledMasonry = styled(Masonry)`
   .photography-tiles-column > span {
     margin: 0px 3px !important;
   }
+  margin-top: 1.5rem;
 `;
 export const StyledDialog = styled(Dialog)`
   width: ${(props: DialogProps) =>
-    (props.width / props.height) * 40 > 100
-      ? 100
-      : (props.width / props.height) * 40}vw;
+    (props.width / props.height) * dialogFactor > maxDialogWidth
+      ? maxDialogWidth
+      : (props.width / props.height) * dialogFactor}vw;
   ${media.tablet`width: 100vw;`};
   background-color: ${({ theme }) => theme.colors.background_secondary};
 `;
