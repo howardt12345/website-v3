@@ -4,7 +4,7 @@ const { fontSizes, fonts } = theme;
 
 const Button = styled.button`
   background-color: transparent;
-  border: 1px solid accent;
+  border: 1px solid ${({ theme }) => theme.colors.accent};
   border-radius: ${theme.borderRadius};
   font-size: ${fontSizes.smish};
   font-family: ${fonts.Raleway};

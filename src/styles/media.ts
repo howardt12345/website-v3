@@ -4,7 +4,7 @@ type tsizes = {
   [key: string]: number;
 };
 
-const sizes: tsizes = {
+export const sizes: tsizes = {
   giant: 1440,
   bigDesktop: 1200,
   desktop: 1000,

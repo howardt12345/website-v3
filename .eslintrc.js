@@ -36,5 +36,7 @@ module.exports = {
     '@typescript-eslint/ban-ts-ignore': 'off',
     // allow requires
     '@typescript-eslint/no-var-requires': 'off',
+    // allow empty function
+    '@typescript-eslint/no-empty-function': 'off',
   },
 };

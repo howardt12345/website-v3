@@ -1,7 +1,7 @@
 const ACCENT = '#2196F3';
 const ACCENT_dark = '#64ffda';
 const DARK_BG = '#EAEAEA';
-const DARK_BG_dark = '#151515';
+const DARK_BG_dark = '#202020';
 const BG = '#FFFFFF';
 const BG_dark = '#121212';
 

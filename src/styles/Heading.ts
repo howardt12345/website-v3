@@ -11,7 +11,7 @@ const Heading = styled.h1`
   font-weight: 400;
   ${media.bigDesktop`font-size: 72px;`};
   ${media.tablet`font-size: 64px;`};
-  ${media.phone`font-size: 52px;`};
+  ${media.phablet`font-size: 48px;`};
 `;
 
 export default Heading;

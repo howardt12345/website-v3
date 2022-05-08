@@ -1,0 +1,46 @@
+import styled from 'styled-components';
+import Masonry from 'react-masonry-css';
+import Dialog from '@reach/dialog';
+import { media, mixins } from '@styles';
+import Image from 'next/image';
+
+interface DialogProps {
+  width: number;
+  height: number;
+}
+
+export const masonryBreakpoints = {
+  default: 3,
+  768: 2,
+  480: 1,
+};
+
+export const StyledContainer = styled.div`
+  display: flex;
+`;
+export const StyledImage = styled(Image)`
+  cursor: pointer;
+`;
+export const StyledMasonry = styled(Masonry)`
+  display: flex;
+  .photography-tiles-column > span {
+    margin: 0px 3px !important;
+  }
+`;
+export const StyledDialog = styled(Dialog)`
+  width: ${(props: DialogProps) =>
+    (props.width / props.height) * 40 > 100
+      ? 100
+      : (props.width / props.height) * 40}vw;
+  ${media.tablet`width: 100vw;`};
+  background-color: ${({ theme }) => theme.colors.background_secondary};
+`;
+export const StyledDialogButtons = styled.div`
+  ${mixins.flexBetween}
+  justify-content: flex-end;
+`;
+export const StyledImgContainer = styled.div`
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+`;
