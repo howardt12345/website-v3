@@ -13,7 +13,7 @@ languages:
   - Taiwanese Mandarin (elementary)
   - Japanese (basic)
 hobbies:
-  - Photography (since 2012)
+  - Photography
   - Electronics Design
   - FPV Drones
   - Mechanical Keyboards

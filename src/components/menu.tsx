@@ -78,7 +78,7 @@ const Menu = ({
     const target = e.target;
     const isLink = target.hasAttribute('href');
     const isNotMenu =
-      target.classList && target.classList[0].includes('StyledContainer');
+      target.classList && target.classList[0]?.includes('Section');
 
     if (isLink || isNotMenu) {
       toggleMenu();

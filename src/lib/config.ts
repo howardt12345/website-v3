@@ -62,7 +62,7 @@ const config = {
     },
     {
       name: 'Contact',
-      url: '/contact',
+      url: 'mailto:me@howardt12345.com',
     },
   ],
   navHeight: 72,

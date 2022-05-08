@@ -3,14 +3,13 @@ import config from '@lib/config';
 import {
   StyledAvatar,
   StyledAvatarLink,
-  StyledContainer,
   StyledContent,
   StyledPic,
   StyledResumeButton,
   StyledResumeContainer,
   AboutDescription,
 } from './about.styles';
-import { FlexContainer, Heading } from '@styles';
+import { FlexContainer, Heading, Section } from '@styles';
 import { Layout } from '@components';
 import { aboutDirectory } from '@lib/about';
 import { SkillsComponent } from './skills';
@@ -27,7 +26,7 @@ const AboutPage = ({
   const { title, avatar } = frontMatter;
   return (
     <Layout isHome={false} animateNav={false} footer={true}>
-      <StyledContainer id='about'>
+      <Section id='about'>
         <Heading>{title}</Heading>
         {/* Main about section */}
         <FlexContainer>
@@ -64,7 +63,7 @@ const AboutPage = ({
             </StyledAvatarLink>
           </StyledPic>
         </FlexContainer>
-      </StyledContainer>
+      </Section>
     </Layout>
   );
 };

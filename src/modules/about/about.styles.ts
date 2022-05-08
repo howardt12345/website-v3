@@ -1,15 +1,8 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import { theme, mixins, media, Section } from '@styles';
+import { theme, mixins, media } from '@styles';
 
 const { fontSizes, fonts } = theme;
-
-export const StyledContainer = styled(Section)`
-  padding-bottom: 50px;
-  position: relative;
-  width: 80vw;
-  flex-direction: column;
-`;
 
 export const StyledContent = styled.div`
   width: 65%;
