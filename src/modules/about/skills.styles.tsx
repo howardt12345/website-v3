@@ -35,5 +35,5 @@ export const SkillsSectionTitle = styled.h2`
   font-family: ${fonts.Poppins};
   color: ${({ theme }) => theme.colors.textPrimary};
   font-weight: 400;
-  font-size: 24px;
+  font-size: ${fontSizes.xl};
 `;
