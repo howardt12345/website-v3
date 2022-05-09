@@ -21,20 +21,20 @@ const config = {
   twitterHandle: '@howardt12345',
   socialMedia: [
     {
-      name: 'Dribbble',
-      url: 'https://dribbble.com/howardt12345',
-    },
-    {
-      name: 'Instagram',
-      url: 'https://instagram.com/howardt12345',
-    },
-    {
       name: 'GitHub',
       url: 'https://github.com/howardt12345',
     },
     {
       name: 'Linkedin',
       url: 'https://linkedin.com/in/howardt12345',
+    },
+    {
+      name: 'Instagram',
+      url: 'https://instagram.com/howardt12345',
+    },
+    {
+      name: 'Dribbble',
+      url: 'https://dribbble.com/howardt12345',
     },
     {
       name: 'Redbubble',
