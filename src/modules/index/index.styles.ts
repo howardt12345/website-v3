@@ -12,7 +12,6 @@ export const StyledContainer = styled(Main)`
 export const StyledTitleBox = styled(motion.div)`
   flex-direction: column;
   width: 800px;
-  ${media.bigDesktop`width: 800px;`};
   ${media.desktop`width: 80vw;`};
 `;
 export const StyledOverline = styled.h2`
@@ -22,9 +21,7 @@ export const StyledOverline = styled.h2`
   font-family: ${fonts.Poppins};
   color: ${({ theme }) => theme.colors.textPrimary};
   line-height: 1;
-  ${media.bigDesktop`font-size: 36px;`};
-  ${media.bigDesktop`text-align: left;`}
-  ${media.tablet`font-size: 20px;`};
+  ${media.tablet`font-size: ${fontSizes.xxl}`};
   ${media.thone`text-align: center;`}
 `;
 export const StyledTitle = styled.h1`
@@ -35,17 +32,12 @@ export const StyledTitle = styled.h1`
   line-height: 0.75;
   font-weight: 400;
   margin-left: -6px;
-  ${media.bigDesktop`font-size: 114px;`};
-  ${media.bigDesktop`text-align: left;`}
-  ${media.thone`text-align: center;`}
-  ${media.desktop`font-size: 114px;`};
   ${media.tablet`font-size: 92px;`};
-  ${media.phablet`font-size: 68px;`};
+  ${media.thone`text-align: center; font-size: 68px;`}
   ${media.phone`font-size: 56px;`};
 `;
 export const StyledSubtitle = styled.h2`
   width: 800px;
-  ${media.bigDesktop`width: 800px;`};
   ${media.desktop`width: 80vw;`};
   text-align: right;
   font-size: ${fontSizes.h3};
@@ -53,21 +45,17 @@ export const StyledSubtitle = styled.h2`
   font-family: ${fonts.Poppins};
   color: ${({ theme }) => theme.colors.textPrimary};
   line-height: 1;
-  ${media.bigDesktop`font-size: 36px;`};
-  ${media.bigDesktop`text-align: right;`}
-  ${media.tablet`font-size: 20px;`};
+  ${media.tablet`font-size: ${fontSizes.xxl}`};
   ${media.thone`text-align: center;`}
 `;
 export const Line = styled.hr`
   width: 800px;
   height: 4px;
-  ${media.bigDesktop`width: 800px;`};
   ${media.desktop`width: 80vw;`};
   background-color: ${({ theme }) => theme.colors.textPrimary};
 `;
 export const StyledNavLinks = styled.div`
   width: 800px;
-  ${media.bigDesktop`width: 800px;`};
   ${media.desktop`width: 80vw;`};
   align-items: center;
 `;

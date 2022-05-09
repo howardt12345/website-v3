@@ -98,14 +98,14 @@ const HomePage = () => {
                   animate='visible'
                   variants={navVariants}
                 >
-                  {width >= 600 && (
+                  {width > 600 && (
                     <StyledNavListItem>
                       <StyledNavListLink href={url}>
                         <a>{name}</a>
                       </StyledNavListLink>
                     </StyledNavListItem>
                   )}
-                  {width < 600 && <IconButton name={name} url={url} />}
+                  {width <= 600 && <IconButton name={name} url={url} />}
                 </motion.div>
               ))}
           </StyledNavList>
