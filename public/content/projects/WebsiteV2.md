@@ -11,4 +11,4 @@ tech:
 showInProjects: true
 ---
 
-The second iteration of my personal website, designed in Figma, built with Gatsby and hosted on Netlify. This website was made as my first project working with web technologies.
+The second iteration of <a href="https://howardt12345.com/" target="_blank">howardt12345.com</a> designed in Figma, built with Gatsby, and hosted on Netlify. This website was made as my first project working with web technologies.

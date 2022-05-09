@@ -10,4 +10,4 @@ tech:
 showInProjects: true
 ---
 
-Developed for the OutStem Front-end Challenge for Summer 2021. It uses React and Material UI components, with animations handled by Framer Motion.
+Developed for the OutStem Front-end Challenge for Summer 2021, using React and Material UI components and animations with Framer Motion.

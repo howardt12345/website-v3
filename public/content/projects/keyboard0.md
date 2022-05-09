@@ -7,7 +7,8 @@ tech:
   - KiCad
   - Fusion 360
   - PCB Design
+  - Firmware
 showInProjects: true
 ---
 
-My first attempt at creating a custom keyboard from scratch. The "keyboard0" layout is a Tenkeyless keyboard with 2 macro keys, 2 rotary encoders, and integrated USB hub.
+My first fully custom keyboard design, with the PCB, Case, and QMK based firmware created by me. The "keyboard0" layout is a Tenkeyless keyboard with 2 macro keys, 2 rotary encoders, and integrated USB hub.

@@ -9,4 +9,4 @@ tech:
 showInProjects: true
 ---
 
-Program to create and 360 audio spectrum videos in Unity. I once created such videos to post on YouTube back in 2016, and has sought to recreate those videos through this project.
+Program to create and 360 audio spectrum videos in Unity. I once created such videos to post on YouTube back in 2016, and have sought to recreate those videos through this project.
