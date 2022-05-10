@@ -9,7 +9,7 @@ import {
   StyledResumeContainer,
   AboutDescription,
 } from './about.styles';
-import { FlexContainer, Heading, Section } from '@styles';
+import { FlexContainer, Heading, Section, Subheading } from '@styles';
 import { Layout } from '@components';
 import { aboutDirectory } from '@lib/about';
 import { SkillsComponent } from './skills';
@@ -63,6 +63,8 @@ const AboutPage = ({
             </StyledAvatarLink>
           </StyledPic>
         </FlexContainer>
+        <Subheading>Timeline</Subheading>
+        <div>Coming soon...</div>
       </Section>
     </Layout>
   );
