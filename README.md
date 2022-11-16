@@ -55,7 +55,7 @@ This website is an updated version of my <a href="https://github.com/howardt1234
    npm run start
    ```
 
-   The preview site should now be running at `http://localhost:9003`.
+   The preview site should now be running at `http://localhost:3000`.
 
 ## Color Reference:
 
