@@ -58,8 +58,7 @@ const AboutPage = ({
               <StyledAvatar
                 src={aboutDirectory + avatar}
                 alt='Photo of me'
-                layout='fill'
-                objectFit='contain'
+                fill
               ></StyledAvatar>
             </StyledAvatarLink>
           </StyledPic>

@@ -38,13 +38,19 @@ export const StyledDialog = styled(Dialog)`
       : (props.width / props.height) * dialogFactor}vw;
   ${media.tablet`width: 100vw;`};
   background-color: ${({ theme }) => theme.colors.background_secondary};
+  aspect-ratio: ${(props: DialogProps) => props.width / props.height};
+  [data-rmiz] {
+    height: 100%;
+  }
 `;
 export const StyledDialogButtons = styled.div`
   ${mixins.flexBetween}
   justify-content: flex-end;
+  margin-top: 1rem;
 `;
 export const StyledImgContainer = styled.div`
   align-items: center;
   justify-content: center;
-  padding-bottom: 1rem;
+  width: 100%;
+  height: 100%;
 `;

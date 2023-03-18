@@ -23,7 +23,7 @@
 
 ## About the website
 
-This website is an updated version of my <a href="https://github.com/howardt12345/website-v2" target="_blank" rel="nofollow noopener noreferrer">v2 website</a>, rewritten to use Next.js and Typescript for easier development. Transitioning to Next.js brought several benefits to the website, such as the option for server-side rendering and less restricted packages. Gatsby became too restrictive for this website, and the process of upgrading to a newer Gatsby version became too frustrating as there were some packages that relied on older versions of Gatsby while others required a newer version. Making the switch to Next.js also allowed me to address this issue, along with many other issues with the v2 website that were not easily fixable had I remained with Gatsby. 
+This website is an updated version of my <a href="https://github.com/howardt12345/website-v2" target="_blank" rel="nofollow noopener noreferrer">v2 website</a>, rewritten to use Next.js and Typescript for easier development. Transitioning to Next.js brought several benefits to the website, such as the option for server-side rendering and less restricted packages. Gatsby became too restrictive for this website, and the process of upgrading to a newer Gatsby version became too frustrating as there were some packages that relied on older versions of Gatsby while others required a newer version. Making the switch to Next.js also allowed me to address this issue, along with many other issues with the v2 website that were not easily fixable had I remained with Gatsby.
 
 ## Installation & Setup
 

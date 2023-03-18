@@ -54,16 +54,16 @@ export const TilesComponent = ({ data }: { data: Picture[] }) => {
         onDismiss={close}
         aria-label='Image'
       >
-        <StyledImgContainer>
-          <Zoom>
+        <Zoom>
+          <StyledImgContainer>
             <Image
               src={data[currentImage]?.getUrl()}
               alt={data[currentImage]?.getUrl()}
-              width={data[currentImage]?.width * 500}
-              height={data[currentImage]?.height * 500}
+              fill
+              priority
             />
-          </Zoom>
-        </StyledImgContainer>
+          </StyledImgContainer>
+        </Zoom>
         <StyledDialogButtons>
           <Button onClick={close}>Close</Button>
         </StyledDialogButtons>
