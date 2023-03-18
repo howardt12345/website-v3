@@ -10,6 +10,7 @@ import {
   StyledImage,
   StyledImgContainer,
   StyledMasonry,
+  StyledMasonryTile,
 } from './tiles.styles';
 import { Button } from '@styles';
 import { Picture } from '@lib/photography';
@@ -33,17 +34,22 @@ export const TilesComponent = ({ data }: { data: Picture[] }) => {
       >
         {data.map((item: any, index: any) => {
           return (
-            <StyledImage
+            <StyledMasonryTile
               key={index}
-              src={item.getUrl()}
-              alt={item.getUrl()}
               width={item.width * 200}
               height={item.height * 200}
-              onClick={() => {
-                setCurrentImage(index);
-                open();
-              }}
-            />
+            >
+              <StyledImage
+                src={item.getUrl()}
+                alt={item.getUrl()}
+                width={item.width * 100}
+                height={item.height * 100}
+                onClick={() => {
+                  setCurrentImage(index);
+                  open();
+                }}
+              />
+            </StyledMasonryTile>
           );
         })}
       </StyledMasonry>
@@ -54,16 +60,16 @@ export const TilesComponent = ({ data }: { data: Picture[] }) => {
         onDismiss={close}
         aria-label='Image'
       >
-        <Zoom>
-          <StyledImgContainer>
+        <StyledImgContainer>
+          <Zoom>
             <Image
               src={data[currentImage]?.getUrl()}
               alt={data[currentImage]?.getUrl()}
               fill
               priority
             />
-          </StyledImgContainer>
-        </Zoom>
+          </Zoom>
+        </StyledImgContainer>
         <StyledDialogButtons>
           <Button onClick={close}>Close</Button>
         </StyledDialogButtons>

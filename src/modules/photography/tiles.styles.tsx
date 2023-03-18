@@ -7,7 +7,7 @@ import Image from 'next/image';
 const dialogFactor = 45;
 const maxDialogWidth = 80;
 
-interface DialogProps {
+interface ImageProps {
   width: number;
   height: number;
 }
@@ -21,7 +21,13 @@ export const masonryBreakpoints = {
 export const StyledContainer = styled.div`
   display: flex;
 `;
+export const StyledMasonryTile = styled.div`
+  aspect-ratio: ${(props: ImageProps) => props.width / props.height};
+  padding: 2px;
+`;
 export const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 `;
 export const StyledMasonry = styled(Masonry)`
@@ -32,13 +38,13 @@ export const StyledMasonry = styled(Masonry)`
   margin-top: 1.5rem;
 `;
 export const StyledDialog = styled(Dialog)`
-  width: ${(props: DialogProps) =>
+  width: ${(props: ImageProps) =>
     (props.width / props.height) * dialogFactor > maxDialogWidth
       ? maxDialogWidth
       : (props.width / props.height) * dialogFactor}vw;
   ${media.tablet`width: 100vw;`};
   background-color: ${({ theme }) => theme.colors.background_secondary};
-  aspect-ratio: ${(props: DialogProps) => props.width / props.height};
+  aspect-ratio: ${(props: ImageProps) => props.width / props.height};
   [data-rmiz] {
     height: 100%;
   }
