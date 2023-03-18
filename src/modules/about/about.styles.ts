@@ -25,6 +25,7 @@ export const StyledPic = styled.div`
 `;
 export const StyledAvatar = styled(Image)``;
 export const StyledAvatarLink = styled.a`
+  aspect-ratio: 4/5;
   span {
     display: block !important;
   }
@@ -36,8 +37,9 @@ export const StyledAvatarLink = styled.a`
     transition: ${theme.transition};
   }
   ${mixins.boxShadow};
-  width: 100%;
   position: relative;
+  width: 100%;
+  height: 100%;
   border-radius: ${theme.borderRadius};
   background-color: ${({ theme }) => theme.colors.accent};
   margin-left: -20px;

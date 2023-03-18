@@ -100,9 +100,7 @@ const HomePage = () => {
                 >
                   {width > 600 && (
                     <StyledNavListItem>
-                      <StyledNavListLink href={url}>
-                        <a>{name}</a>
-                      </StyledNavListLink>
+                      <StyledNavListLink href={url}>{name}</StyledNavListLink>
                     </StyledNavListItem>
                   )}
                   {width <= 600 && <IconButton name={name} url={url} />}
