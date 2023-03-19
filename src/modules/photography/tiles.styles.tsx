@@ -30,8 +30,10 @@ export const StyledImage = styled(Image)`
   height: 100%;
   cursor: pointer;
 `;
-export const StyledMasonry = styled(Masonry)`
-  display: flex;
+export const StyledMasonryContainer = styled.div`
+  .photography-tiles {
+    display: flex;
+  }
   .photography-tiles-column > span {
     margin: 0px 3px !important;
   }
