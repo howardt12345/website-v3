@@ -19,6 +19,7 @@ import {
 } from './nav.styles';
 
 import { theme } from '@styles';
+import Link from 'next/link';
 const { loaderDelay } = theme;
 
 const DELTA = 5;
@@ -121,15 +122,13 @@ class Nav extends Component<{ animate: boolean }> {
               <CSSTransition classNames={fadeClass} timeout={timeout}>
                 <StyledLogo>
                   {animate ? (
-                    // eslint-disable-next-line @next/next/no-html-link-for-pages
-                    <a href='/' aria-label='home'>
+                    <Link href='/' aria-label='home'>
                       <IconLogo />
-                    </a>
+                    </Link>
                   ) : (
-                    // eslint-disable-next-line @next/next/no-html-link-for-pages
-                    <a href='/' aria-label='home'>
+                    <Link href='/' aria-label='home'>
                       <IconLogo />
-                    </a>
+                    </Link>
                   )}
                 </StyledLogo>
               </CSSTransition>
