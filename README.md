@@ -14,7 +14,7 @@
   <a href="https://github.com/howardt12345/website-v2" target="_blank">v2</a>,
 </p>
 <p align="center">
-  <a href="hhttps://app.netlify.com/sites/howardt12345-v3/deploys" target="_blank">
+  <a href="https://app.netlify.com/sites/howardt12345-v3/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/788e4324-3e70-47e8-8b85-a269bf6c173c/deploy-status" alt="Netlify Status" />
   </a>
 </p>
