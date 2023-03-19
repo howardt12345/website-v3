@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import Masonry from 'react-masonry-css';
 import Image from 'next/image';
 import Zoom from 'react-medium-image-zoom';
 
@@ -9,7 +10,8 @@ import {
   StyledDialogButtons,
   StyledImage,
   StyledImgContainer,
-  StyledMasonry,
+  StyledMasonryContainer,
+  StyledMasonryTile,
 } from './tiles.styles';
 import { Button } from '@styles';
 import { Picture } from '@lib/photography';
@@ -26,27 +28,34 @@ export const TilesComponent = ({ data }: { data: Picture[] }) => {
 
   return (
     <div>
-      <StyledMasonry
-        breakpointCols={masonryBreakpoints}
-        className='photography-tiles'
-        columnClassName='photography-tiles-column'
-      >
-        {data.map((item: any, index: any) => {
-          return (
-            <StyledImage
-              key={index}
-              src={item.getUrl()}
-              alt={item.getUrl()}
-              width={item.width * 200}
-              height={item.height * 200}
-              onClick={() => {
-                setCurrentImage(index);
-                open();
-              }}
-            />
-          );
-        })}
-      </StyledMasonry>
+      <StyledMasonryContainer>
+        <Masonry
+          breakpointCols={masonryBreakpoints}
+          className='photography-tiles'
+          columnClassName='photography-tiles-column'
+        >
+          {data.map((item: any, index: any) => {
+            return (
+              <StyledMasonryTile
+                key={index}
+                width={item.width * 200}
+                height={item.height * 200}
+              >
+                <StyledImage
+                  src={item.getUrl()}
+                  alt={item.getUrl()}
+                  width={item.width * 100}
+                  height={item.height * 100}
+                  onClick={() => {
+                    setCurrentImage(index);
+                    open();
+                  }}
+                />
+              </StyledMasonryTile>
+            );
+          })}
+        </Masonry>
+      </StyledMasonryContainer>
       <StyledDialog
         width={data[currentImage]?.width}
         height={data[currentImage]?.height}
@@ -59,8 +68,8 @@ export const TilesComponent = ({ data }: { data: Picture[] }) => {
             <Image
               src={data[currentImage]?.getUrl()}
               alt={data[currentImage]?.getUrl()}
-              width={data[currentImage]?.width * 500}
-              height={data[currentImage]?.height * 500}
+              fill
+              priority
             />
           </Zoom>
         </StyledImgContainer>
