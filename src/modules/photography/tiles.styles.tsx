@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Masonry from 'react-masonry-css';
 import Dialog from '@reach/dialog';
 import { media, mixins } from '@styles';
 import Image from 'next/image';
