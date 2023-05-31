@@ -2,9 +2,10 @@
 title: 'About'
 avatar: '/me.jpg'
 technologies:
+  - Vue
   - React (Gatsby, NextJS)
-  - Typescript
   - Angular
+  - Typescript
   - Firebase
   - PostgreSQL
   - QMK/Via/Vial
@@ -19,8 +20,8 @@ hobbies:
   - Electronics Design
   - FPV Drones
   - Mechanical Keyboards
-  - Music
-  - Video Games
+  - Music (Guitar)
+  - Guitar Building
 ---
 
 Hello! I'm Howard, a front-end developer and freelance photographer. I'm also currently a 4th year Computer Science student at the University of Ottawa.
